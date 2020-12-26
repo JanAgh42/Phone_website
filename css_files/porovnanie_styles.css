@@ -1,0 +1,81 @@
+.popis {
+  margin-left: 5vw;
+  margin-right: 40vw;
+  font-size: 1.4rem;
+  line-height: 40px;
+  text-align: justify;
+  text-justify: inter-word;
+  box-sizing: border-box;
+  padding: 1vw;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 0.8vw;
+  margin-bottom: 4vw;
+}
+.gify,
+.zaznam {
+  text-align: center;
+  flex: 1;
+}
+h2 {
+  font-size: 2rem;
+}
+.gify h2 {
+  margin-bottom: 2vw;
+}
+.gify img {
+  width: 20vw;
+}
+.edit img {
+  width: 36vw;
+}
+.zaznam p {
+  width: 20vw;
+  margin: auto;
+  font-size: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 2vw;
+  padding: 1vw;
+}
+.zaznam img {
+  width: 10vw;
+  transition-duration: 1s;
+  outline: 0;
+}
+.doprava:hover {
+  transform: rotate(90deg);
+}
+.dolava:hover {
+  transform: rotate(-90deg);
+}
+.kruh:hover {
+  transform: rotate(360deg);
+}
+.okraj {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+.okraj h2 {
+  margin-top: 3vw;
+}
+@media only screen and (max-width: 1150px) {
+  .popis {
+    width: 80vw;
+    font-size: 2rem;
+    line-height: 50px;
+    margin: auto;
+    margin-bottom: 5vw;
+  }
+  .gify img {
+    width: 25vw;
+  }
+  .edit img {
+    width: 45vw;
+  }
+  .zaznam p {
+    font-size: 2rem;
+    width: 25vw;
+  }
+  .zaznam img {
+    width: 15vw;
+  }
+}

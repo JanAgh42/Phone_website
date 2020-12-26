@@ -1,0 +1,144 @@
+.text p {
+  margin: auto;
+  width: 28vw;
+  font-size: 1.4rem;
+  line-height: 40px;
+  text-align: justify;
+  text-justify: inter-word;
+  box-sizing: border-box;
+  padding: 1vw;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 0.8vw;
+}
+.fotky {
+  flex: 2;
+  text-align: center;
+}
+.text,
+.podseba,
+.galeria1,
+.galeria2 {
+  flex: 1;
+  text-align: center;
+}
+.vedla {
+  flex: 1;
+  text-align: right;
+}
+.fotky img {
+  width: 30vw;
+}
+.obrazok {
+  flex: 4;
+  text-align: center;
+}
+#zobraz {
+  width: 52vw;
+  height: 39vw;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 1vw;
+  background-image: url("../images/vzhlad_prislusenstvo/sisky.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  box-shadow: 0.2vw 0.2vw 0.7vw grey;
+}
+input[type="radio"] {
+  width: 8vw;
+  height: 6vw;
+  margin: 1vw auto;
+  border: 1px solid black;
+  border-radius: 1vw;
+  display: block;
+  appearance: none;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0.2vw 0.2vw 0.7vw grey;
+}
+.podseba img {
+  display: block;
+}
+.uprava {
+  opacity: 1;
+}
+#obr1 {
+  background-image: url(../images/vzhlad_prislusenstvo/Malefotky/siskymin.png);
+  background-size: cover;
+}
+#obr2 {
+  background-image: url(../images/vzhlad_prislusenstvo/Malefotky/zdolamin.png);
+  background-size: cover;
+}
+#obr3 {
+  background-image: url(../images/vzhlad_prislusenstvo/Malefotky/zhoramin.png);
+  background-size: cover;
+}
+#obr4 {
+  background-image: url(../images/vzhlad_prislusenstvo/Malefotky/zlavamin.png);
+  background-size: cover;
+}
+#obr5 {
+  background-image: url(../images/vzhlad_prislusenstvo/Malefotky/zpravamin.png);
+  background-size: cover;
+}
+#obr6 {
+  background-image: url(../images/vzhlad_prislusenstvo/Malefotky/zozadumin.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+#obr7 {
+  background-image: url(../images/vzhlad_prislusenstvo/Malefotky/zpredumin.png);
+  background-size: cover;
+}
+#obr8 {
+  background-image: url(../images/vzhlad_prislusenstvo/Malefotky/rozmerymin.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+@media only screen and (max-width: 1150px) {
+  .flex {
+    flex-wrap: wrap;
+  }
+  .text {
+    flex-basis: 100%;
+    margin-bottom: 5vw;
+  }
+  .text p {
+    line-height: 50px;
+    font-size: 2rem;
+    width: 80vw;
+  }
+  .fotky {
+    flex-basis: 100%;
+  }
+  .fotky img {
+    width: 40vw;
+  }
+  #zobraz {
+    width: 88vw;
+    height: 66vw;
+    order: 1;
+  }
+  .galeria1,
+  .galeria2 {
+    width: fit-content;
+    margin-top: 1vw;
+    flex-basis: 50%;
+    order: 2;
+  }
+  .galeria1 {
+    text-align: right;
+  }
+  .galeria2 {
+    text-align: left;
+  }
+  input[type="radio"] {
+    display: inline-block;
+    width: 10vw;
+    height: 7.5vw;
+    margin-right: 0.5vw;
+  }
+}

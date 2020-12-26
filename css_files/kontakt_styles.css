@@ -1,0 +1,145 @@
+.paragraf p {
+  margin: auto;
+  width: 50vw;
+  font-size: 1.4rem;
+  line-height: 40px;
+  text-align: justify;
+  text-justify: inter-word;
+  box-sizing: border-box;
+  padding: 1vw;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 0.8vw;
+}
+.paragraf {
+  flex: 2;
+  text-align: center;
+}
+.odkazy {
+  flex: 1;
+  text-align: center;
+}
+.odkazy a {
+  display: block;
+  padding: 1vw;
+  box-shadow: 0.2vw 0.2vw 0.7vw grey;
+  text-decoration: none;
+  background-color: rgb(141, 229, 252);
+  text-align: center;
+  border-radius: 1vw;
+  margin: 1vw auto;
+  width: 15vw;
+}
+.odkazy a:hover {
+  background-color: rgb(92, 222, 255);
+}
+.stred {
+  width: fit-content;
+  margin: auto;
+  text-align: center;
+  padding: 2vw;
+  border-radius: 1vw;
+  background-color: rgb(200, 250, 255);
+  box-shadow: 0.2vw 0.2vw 0.7vw grey;
+}
+.meno,
+.komentar {
+  margin-bottom: 1vw;
+}
+.meno input {
+  width: 16vw;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 0.5vw;
+  outline: none;
+}
+.komentar textarea {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 0.5vw;
+  outline: none;
+}
+input[type="submit"] {
+  width: 7vw;
+  padding: 10px;
+  border: none;
+  border-radius: 0.5vw;
+  outline: none;
+  background-color: rgb(141, 229, 252);
+  box-shadow: 0.2vw 0.2vw 0.7vw grey;
+}
+input[type="submit"]:hover {
+  background-color: rgb(92, 222, 255);
+}
+.komentdesign {
+  width: 60vw;
+  height: fit-content;
+  padding: 1vw;
+  margin: auto;
+
+  border-radius: 0.5vw;
+  margin-top: 3vw;
+  background-color: rgb(200, 250, 255);
+  box-shadow: 0.2vw 0.2vw 0.7vw grey;
+}
+.komentmeno {
+  margin-left: 4vw;
+  margin-bottom: 10px;
+}
+.komentdesign hr {
+  background: black;
+  height: 1px;
+}
+pre {
+  white-space: pre-wrap;
+}
+.komenttext {
+  padding: 2vw;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 1rem;
+  font-family: sans-serif;
+}
+@media only screen and (max-width: 1150px) {
+  .flex {
+    flex-wrap: wrap;
+  }
+  .paragraf,
+  .odkazy {
+    flex-basis: 100%;
+  }
+  .paragraf p {
+    font-size: 2rem;
+    line-height: 50px;
+    width: 80vw;
+    margin-bottom: 3vw;
+  }
+  .odkazy a {
+    display: inline-block;
+    font-size: 1.8rem;
+    width: 23vw;
+    margin: 2vw 3vw;
+  }
+  .komentar,
+  .komentdesign {
+    width: 80vw;
+  }
+  .komentmeno,
+  label {
+    font-size: 2rem;
+  }
+  .komenttext {
+    font-size: 1.7rem;
+  }
+  .meno input {
+    width: 40vw;
+    font-size: 2rem;
+  }
+  textarea {
+    width: 70vw;
+    font-size: 1.8rem;
+  }
+  input[type="submit"] {
+    width: 20vw;
+    font-size: 2rem;
+  }
+}

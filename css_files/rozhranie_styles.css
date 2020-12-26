@@ -1,0 +1,81 @@
+.rozhranie {
+  width: 100vw;
+  min-height: 10vw;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 4vw 0;
+  border-bottom: 0.2vw solid black;
+  border-top: 0.2vw solid black;
+  margin-bottom: 5vw;
+}
+.flex2 {
+  display: flex;
+  align-items: unset;
+}
+.image img {
+  height: 38vw;
+  border: 1px solid black;
+  border-radius: 1vw;
+  box-shadow: 0.2vw 0.2vw 0.7vw grey;
+}
+.image,
+.text,
+.video {
+  flex: 1;
+  text-align: center;
+}
+.video video {
+  width: 43vw;
+  border-radius: 1vw;
+  min-width: 400px;
+  outline: none;
+  box-shadow: 0.2vw 0.2vw 0.6vw rgb(56, 56, 56);
+}
+.popis {
+  margin: auto;
+  width: 40vw;
+  font-size: 1.4rem;
+  line-height: 40px;
+  text-align: justify;
+  text-justify: inter-word;
+  box-sizing: border-box;
+  padding: 1vw;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 0.8vw;
+}
+.video img {
+  width: 40vw;
+  min-width: 400px;
+}
+
+@media only screen and (max-width: 1150px) {
+  .flex2,
+  .flex {
+    flex-wrap: wrap;
+  }
+  .text {
+    flex-basis: 100%;
+    margin-bottom: 5vw;
+  }
+  .popis {
+    width: 80vw;
+    font-size: 2rem;
+    line-height: 50px;
+  }
+  .video {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  .video video {
+    width: 90vw;
+  }
+  .image {
+    flex-basis: 50%;
+  }
+  .image img {
+    height: 80vw;
+  }
+  .miesto {
+    margin-top: 4vw;
+  }
+}

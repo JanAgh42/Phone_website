@@ -1,0 +1,379 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: white;
+  overflow-x: hidden;
+  background-image: url(../images/pozadie1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: sans-serif;
+}
+.container {
+  position: relative;
+  min-height: 100vh;
+}
+.content {
+  padding-bottom: 3.5vw;
+}
+.moznosti {
+  height: fit-content;
+  align-items: center;
+  margin: 5vw auto;
+  display: flex;
+}
+.moznosti div {
+  width: fit-content;
+  flex: 1;
+  text-align: center;
+  position: relative;
+  margin: 0 2vw;
+}
+.moznosti div img {
+  width: 20vw;
+  border-radius: 1vw;
+  border: 2px solid black;
+  box-shadow: 3px 3px 12px rgb(51, 51, 51);
+  background-color: black;
+}
+.moznosti div:hover {
+  opacity: 0.7;
+  transition: all 0.15s ease;
+  -webkit-transition: all 0.15s ease;
+}
+.moznosti div h2 {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  font-size: 2vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0.7vw;
+  border: 2px solid white;
+  border-radius: 1vw;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: yellow;
+}
+nav {
+  height: fit-content;
+  width: 100vw;
+  z-index: 10;
+  background-color: rgb(200, 250, 255);
+  position: fixed;
+  box-shadow: 0 3px 7px rgb(41, 41, 41);
+  padding: 5px 0;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+#logo {
+  margin-left: 1vw;
+}
+#logo img {
+  width: 2.8vw;
+}
+a {
+  text-decoration: none;
+  font-size: 1.5vw;
+  color: black;
+}
+.jazyky {
+  display: inline-block;
+  flex: 1;
+  text-align: right;
+  margin-right: 1vw;
+}
+.jazyky a {
+  background-color: rgb(200, 250, 255);
+  padding: 0.3vw;
+  border-color: black;
+  border-radius: 0.3vw;
+}
+.jazyky a img {
+  width: 2vw;
+}
+.buttons {
+  list-style-type: none;
+  flex: 7;
+  text-align: right;
+}
+.buttons li {
+  display: inline-block;
+  background-color: transparent;
+  margin: 0 20px;
+  position: relative;
+}
+nav a {
+  display: inline-block;
+  font-size: 1.2rem;
+}
+.buttons a {
+  border: 0.1vw solid transparent;
+  display: block;
+  border-radius: 0.2px;
+  box-sizing: border-box;
+  padding: 0.5vw;
+}
+.dropdown {
+  z-index: 20;
+  min-width: 130%;
+  margin-left: -15%;
+  background: #f2f2f2;
+  display: none;
+  position: absolute;
+  left: 0;
+  border-radius: 1vw;
+  background: transparent;
+}
+.buttons li:hover ul.dropdown {
+  display: block;
+}
+.buttons li ul.dropdown li {
+  display: block;
+  text-align: center;
+  margin: 0.2vw 0;
+  background-color: rgb(141, 229, 252);
+  border-radius: 0.3vw;
+  box-shadow: 0 3px 7px rgb(41, 41, 41);
+}
+.dropdown li a {
+  border: 0.1vw solid transparent;
+}
+.dropdown li a:hover {
+  border: 0.1vw solid transparent;
+  border-radius: 0.3vw;
+  background-color: rgb(92, 222, 255);
+  transition: all 0s ease;
+  -webkit-transition: all 0s ease;
+}
+.buttons a:hover {
+  transition: all 0.15s ease;
+  -webkit-transition: all 0.15s ease;
+  border: 0.1vw solid black;
+  border-radius: 1vw;
+  box-sizing: border-box;
+  padding: 0.5vw;
+}
+.medzera {
+  width: 100vw;
+  height: 8vw;
+  background-color: rgba(red, green, blue, 0);
+}
+.main {
+  width: 100vw;
+  display: block;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  background-color: black;
+}
+.uvod {
+  position: relative;
+}
+.uvod h1 {
+  position: absolute;
+  top: 3vw;
+  left: 6vw;
+  font-size: 4.5vw;
+}
+.uvod p {
+  position: absolute;
+  top: 12.5vw;
+  right: 50vw;
+  left: 6vw;
+  font-size: 1.5vw;
+  line-height: 40px;
+  text-align: justify;
+  text-justify: inter-word;
+  box-sizing: border-box;
+  padding: 1vw;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 0.8vw;
+}
+footer {
+  background-color: rgb(141, 229, 252);
+  height: 3rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-top: 2px solid black;
+}
+footer p {
+  width: fit-content;
+  margin: auto;
+  color: black;
+  font-size: 1.2rem;
+}
+.nadpis h1 {
+  padding: 1.5vw;
+  margin-left: 100px;
+  font-size: 3rem;
+  background-color: rgba(1, 2, 3, 0);
+  animation-name: pohyb;
+  animation-duration: 1s;
+}
+@keyframes pohyb {
+  from {
+    margin-left: -1200px;
+  }
+  to {
+    margin-left: 100px;
+  }
+}
+.nadpis {
+  background-color: rgba(44, 44, 44, 0.4);
+  border-bottom: 3px solid black;
+  border-top: 3px solid black;
+  width: 100vw;
+  margin-bottom: 4vw;
+}
+.sekcia {
+  padding: 3vw 0;
+  background-color: white;
+  border-bottom: 3px solid black;
+  border-top: 3px solid black;
+  opacity: 0.92;
+  margin-bottom: 4vw;
+}
+.kapitola {
+  margin: 3vw 0 2vw 4vw;
+  font-size: 2rem;
+}
+.flexing {
+  display: flex;
+  align-items: center;
+  text-align: right;
+}
+.left {
+  flex: 1;
+  text-align: left;
+}
+.otvorit {
+  display: none;
+  visibility: hidden;
+}
+.mobile img {
+  width: 2vw;
+}
+.ikona img {
+  width: 5vw;
+  cursor: pointer;
+}
+.ikona {
+  margin-right: 2vw;
+  display: none;
+  visibility: hidden;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 1150px) {
+  .uvod h1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: auto;
+    width: fit-content;
+    font-size: 7vw;
+    margin-top: 5vw;
+  }
+  .uvod p {
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    line-height: 50px;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 80vw;
+    margin: 6vw auto 4vw auto;
+  }
+  .jazyky a img {
+    width: 5vw;
+  }
+  #logo img {
+    width: 7vw;
+  }
+  .flexing {
+    flex-wrap: wrap;
+  }
+  .dropdown {
+    width: fit-content;
+  }
+  .buttons li ul.dropdown li {
+    margin: 0.5vw auto;
+  }
+  .dropdown a {
+    display: inline-block;
+  }
+  .buttons {
+    display: none;
+    visibility: hidden;
+  }
+  .buttons li {
+    display: block;
+    width: fit-content;
+    margin: auto;
+  }
+  li a {
+    font-size: 2.5rem;
+  }
+  .ikona {
+    flex: 1;
+    display: block;
+    visibility: visible;
+    order: 3;
+  }
+  .left {
+    order: 1;
+  }
+  .otvorit:checked ~ .buttons {
+    display: block;
+    visibility: visible;
+    flex-basis: 100%;
+    order: 4;
+  }
+  .jazyky {
+    text-align: center;
+    order: 2;
+    margin: 0;
+  }
+  .moznosti {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .moznosti div {
+    flex-basis: 50%;
+    margin-bottom: 5vw;
+  }
+  .moznosti div img {
+    width: 80vw;
+    border-radius: 10vw;
+  }
+  .moznosti div h2 {
+    font-size: 5rem;
+    border-radius: 5vw;
+    padding: 20px;
+  }
+  .nadpis h1 {
+    margin: 0;
+  }
+  @keyframes pohyb {
+    from {
+      margin: 0;
+    }
+    to {
+      margin: 0;
+    }
+  }
+  .nadpis {
+    text-align: center;
+    margin-top: 5vw;
+  }
+  footer {
+    height: 5vw;
+  }
+}

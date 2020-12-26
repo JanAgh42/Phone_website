@@ -1,0 +1,97 @@
+.popis {
+  margin-left: 5vw;
+  margin-right: 40vw;
+  font-size: 1.4rem;
+  line-height: 40px;
+  text-align: justify;
+  text-justify: inter-word;
+  box-sizing: border-box;
+  padding: 1vw;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 0.8vw;
+}
+.medzera {
+  margin-right: 15vw;
+}
+.center {
+  width: 100vw;
+  padding: 2vw;
+  box-sizing: border-box;
+  border-bottom: 0.2vw solid black;
+  border-top: 0.2vw solid black;
+  margin: 3vw 0;
+  background-color: white;
+  opacity: 0.92;
+}
+.linky {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3vw;
+}
+.linky a {
+  padding: 2vw;
+  text-decoration: none;
+  background-color: rgb(141, 229, 252);
+  text-align: center;
+  border-radius: 1vw;
+  display: inline-block;
+  width: 10vw;
+  box-shadow: 0.2vw 0.2vw 0.7vw grey;
+}
+.linky a:hover {
+  background-color: rgb(92, 222, 255);
+}
+.tlacidlo,
+.odkaz {
+  text-align: center;
+  flex: 1;
+}
+.uprava {
+  opacity: 1;
+}
+.tlacidlo a {
+  width: fit-content;
+  font-size: 1vw;
+  font-weight: bold;
+  padding: 1vw;
+  background-color: rgb(200, 250, 255);
+  border-radius: 1vw;
+  border: 1px solid black;
+  box-shadow: 0.2vw 0.2vw 0.6vw rgb(56, 56, 56);
+  outline: none;
+}
+.odkaz img {
+  width: 80vw;
+}
+@media only screen and (max-width: 1150px) {
+  .popis {
+    margin: auto;
+    width: 80vw;
+    font-size: 2rem;
+    line-height: 50px;
+    margin-bottom: 5vw;
+  }
+  .flex {
+    flex-wrap: wrap;
+  }
+  .tlacidlo {
+    flex-basis: 100%;
+  }
+  .tlacidlo h3 {
+    width: 90vw;
+    margin: 0 auto 4vw auto;
+    font-size: 1.8rem;
+  }
+  .tlacidlo a {
+    font-size: 1.8rem;
+    display: inline-block;
+    margin: 0 auto 1vw auto;
+  }
+  .linky a {
+    font-size: 3vw;
+    width: 20vw;
+  }
+  .odkaz img {
+    width: 95vw;
+  }
+}

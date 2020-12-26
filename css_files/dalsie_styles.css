@@ -1,0 +1,122 @@
+.popis {
+  margin-left: 5vw;
+  width: 70vw;
+  font-size: 1.4rem;
+  line-height: 40px;
+  text-align: justify;
+  text-justify: inter-word;
+  box-sizing: border-box;
+  padding: 1vw;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 0.8vw;
+}
+.audio {
+  margin-top: 2vw;
+  text-align: center;
+}
+.prve_audio {
+  margin: auto;
+  margin-bottom: 3vw;
+}
+.druhe_audio {
+  margin: auto;
+}
+.posun {
+  margin-left: 13vw;
+}
+.audio a {
+  display: inline-block;
+  width: 6vw;
+  padding: 1vw;
+  background-color: rgb(141, 229, 252);
+  border-radius: 1vw;
+  border: 1px solid black;
+  box-shadow: 0.2vw 0.2vw 0.6vw rgb(56, 56, 56);
+  cursor: pointer;
+}
+.audio a:hover {
+  background-color: rgb(92, 222, 255);
+}
+.videotext {
+  margin: auto;
+  width: 30vw;
+}
+.flex {
+  flex-wrap: wrap;
+}
+.zvonenia {
+  flex: 1;
+}
+.text,
+.video {
+  flex: 1;
+  text-align: center;
+}
+.video video {
+  width: 43vw;
+  border-radius: 1vw;
+  min-width: 400px;
+  outline: none;
+  box-shadow: 0.2vw 0.2vw 0.6vw rgb(56, 56, 56);
+}
+.photo {
+  flex: 1;
+  text-align: center;
+  flex-basis: 50%;
+}
+.photo img {
+  border: 1px solid black;
+  border-radius: 1vw;
+  box-shadow: 0.2vw 0.2vw 0.7vw grey;
+}
+.ukazka {
+  width: 40vw;
+  min-width: 200px;
+}
+.photo h3 {
+  margin-bottom: 2vw;
+  margin-top: 4vw;
+  font-size: 2rem;
+}
+.uprava {
+  opacity: 1;
+}
+.sirka {
+  width: 80vw;
+}
+@media only screen and (max-width: 1150px) {
+  .flex {
+    flex-wrap: wrap;
+  }
+  .photo {
+    flex-basis: 100%;
+  }
+  .photo img {
+    width: 80vw;
+  }
+  .popis {
+    margin: auto;
+    width: 80vw;
+    font-size: 2rem;
+    line-height: 50px;
+  }
+  .text {
+    flex-basis: 100%;
+    margin-bottom: 5vw;
+  }
+  .video {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  .video video {
+    width: 90vw;
+  }
+  .audio a {
+    width: 20vw;
+    font-size: 2rem;
+    padding: 2vw;
+  }
+  .audio {
+    margin-top: 3vw;
+  }
+}

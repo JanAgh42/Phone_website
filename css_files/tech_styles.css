@@ -1,0 +1,103 @@
+.popis {
+  margin-left: 5vw;
+  margin-right: 40vw;
+  font-size: 1.4rem;
+  line-height: 40px;
+  text-align: justify;
+  text-justify: inter-word;
+  box-sizing: border-box;
+  padding: 1vw;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 0.8vw;
+}
+.image img {
+  width: 20vw;
+  min-width: 300px;
+}
+
+.tabulky {
+  padding: 3vw 0;
+  border-bottom: 0.2vw solid black;
+  border-top: 0.2vw solid black;
+  background-color: white;
+  opacity: 0.92;
+  margin-bottom: 5vw;
+}
+.lavy_horny {
+  border-top-left-radius: 1vw;
+}
+.lavy_dolny {
+  border-bottom-left-radius: 1vw;
+}
+.pravy_horny {
+  border-top-right-radius: 1vw;
+}
+.pravy_dolny {
+  border-bottom-right-radius: 1vw;
+}
+table {
+  border-collapse: collapse;
+  display: inline-block;
+  border: 0.1vw solid black;
+  border-radius: 1vw;
+  box-shadow: 0.2vw 0.2vw 0.7vw grey;
+}
+
+table tr td {
+  padding: 1.5vw 1vw;
+}
+.nazvy {
+  background-color: rgb(141, 229, 252);
+  min-width: 13vw;
+}
+.nazvy2 {
+  background-color: rgb(200, 250, 255);
+  min-width: 13vw;
+}
+.obsah {
+  background-color: rgb(210, 250, 255);
+  min-width: 32vw;
+}
+.tab {
+  flex: 2;
+  text-align: center;
+}
+.image {
+  flex: 1;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1150px) {
+  .flex {
+    flex-wrap: wrap;
+  }
+  .tab {
+    flex-basis: 100%;
+    order: 2;
+  }
+  .image {
+    flex-basis: 100%;
+    order: 1;
+  }
+  .nazvy,
+  .nazvy2 {
+    min-width: 24vw;
+    max-width: 24vw;
+    font-size: 2rem;
+  }
+  .obsah {
+    min-width: 58vw;
+    max-width: 58vw;
+    font-size: 1.7rem;
+  }
+  .image img {
+    width: 80vw;
+    margin-bottom: 2vw;
+  }
+  .popis {
+    width: 80vw;
+    font-size: 2rem;
+    line-height: 50px;
+    margin: auto;
+  }
+}
