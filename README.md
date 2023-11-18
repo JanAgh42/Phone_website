@@ -1,10 +1,10 @@
-### Project overview
+## Project overview
 
 Static website about the Xiaomi Redmi Note 9 phone, availabne in both Slovak and English.
 
 The website utilizes responsive design optimized for desktops, tablets as well as mobile phones.
 
-## Used technologies
+### Used technologies
 
 - HTML5
 - CSS3
@@ -13,7 +13,7 @@ The website utilizes responsive design optimized for desktops, tablets as well a
 - Adobe Photoshop (photo editing)
 - Inkscape (creation of graphics)
 
-## Website structure
+### Website structure
 
 - Main Page
 - Technical Parameters Page
@@ -24,7 +24,7 @@ The website utilizes responsive design optimized for desktops, tablets as well a
 - Availability Page
 - Contacts page
 
-## Design overview
+### Design overview
 
 Below can be seen the design, layout and content of the main page. The designs of the other pages are derived from it.
 
